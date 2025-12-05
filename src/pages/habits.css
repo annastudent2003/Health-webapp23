@@ -1,0 +1,79 @@
+.habits-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #f2f9f6;
+}
+
+.habits-content {
+  flex: 1;
+  padding: 30px 60px;
+}
+
+.habits-content h2 {
+  color: #013d36;
+  font-size: 1.6rem;
+  margin-bottom: 25px;
+}
+
+.habit-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.habit-form input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #a6d2c7;
+  outline: none;
+}
+
+.habit-form button {
+  background: #01755e;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.habit-form button:hover {
+  background: #00a894;
+}
+
+.habit-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 15px;
+}
+
+.habit-card {
+  background: #fff;
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.habit-card button {
+  background: #01755e;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 12px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.habit-card button:hover {
+  background: #00a894;
+}
+
+.empty {
+  color: #777;
+  text-align: center;
+}

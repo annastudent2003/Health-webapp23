@@ -1,0 +1,51 @@
+.topbar {
+  background: linear-gradient(120deg, #014d43, #007f72);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 35px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.topbar nav {
+  display: flex;
+  gap: 20px;
+}
+
+.tab {
+  color: #d5f6ef;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.tab.active {
+  border-bottom: 2px solid #ffffff;
+  color: #fff;
+}
+
+.tab:hover {
+  color: #ffffff;
+}
+
+.logout {
+  background: #fff;
+  color: #015a4f;
+  font-weight: 600;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.logout:hover {
+  background: #c3f1e8;
+}

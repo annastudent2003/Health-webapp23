@@ -1,0 +1,76 @@
+.symptom-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #f2f9f6;
+}
+
+.symptom-content {
+  flex: 1;
+  padding: 30px 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.symptom-content h2 {
+  color: #013d36;
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+}
+
+.chat-box {
+  flex: 1;
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  overflow-y: auto;
+  margin-bottom: 15px;
+}
+
+.chat-msg {
+  margin: 8px 0;
+  max-width: 70%;
+  padding: 8px 12px;
+  border-radius: 12px;
+  line-height: 1.4;
+}
+
+.chat-msg.user {
+  background: #01755e;
+  color: white;
+  align-self: flex-end;
+}
+
+.chat-msg.bot {
+  background: #e7f5f1;
+  color: #013d36;
+  align-self: flex-start;
+}
+
+.chat-form {
+  display: flex;
+  gap: 10px;
+}
+
+.chat-form input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #a6d2c7;
+  outline: none;
+}
+
+.chat-form button {
+  background: #01755e;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.chat-form button:hover {
+  background: #00a894;
+}

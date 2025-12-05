@@ -1,0 +1,151 @@
+/* Outer Background */
+.main-bg {
+  height: 100vh;
+  width: 100%;
+  background: #75978c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Main container box */
+.curved-box {
+  display: flex;
+  width: 85%;
+  max-width: 1200px;
+  height: 80vh;
+  background: white;
+  border-radius: 35px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  position: relative;
+}
+
+/* Left section: image with white background */
+.left-section {
+  flex: 1;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.logo-text {
+  position: absolute;
+  top: 25px;
+  left: 35px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #274649;
+}
+
+/* Right section: straight green half */
+.right-section {
+  flex: 1;
+  background: linear-gradient(150deg, #10413c, #015945);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 50px;
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 35px;
+}
+
+/* Remove curve SVG divider completely */
+.divider-svg {
+  display: none;
+}
+
+/* Form container */
+.form-wrap {
+  width: 78%;
+  max-width: 380px;
+  color: #fff;
+}
+
+/* Toggle Links */
+.toggle-links {
+  text-align: right;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+.toggle-links .sep {
+  margin: 0 8px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.toggle-links span {
+  color: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+}
+.toggle-links span.active {
+  text-decoration: underline;
+}
+
+/* Labels, inputs, buttons */
+label {
+  display: block;
+  margin-top: 12px;
+  font-weight: 600;
+  color: #dff4ec;
+}
+input {
+  display: block;
+  width: 100%;
+  margin-top: 8px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: none;
+  background: #f7f7f7;
+  color: #222;
+  box-sizing: border-box;
+}
+.btn-primary {
+  margin-top: 14px;
+  width: 100%;
+  padding: 11px;
+  border-radius: 10px;
+  border: none;
+  background: #418073;
+  color: #f9fdfc;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.btn-primary:hover {
+  background: #41a093;
+  color: #041a12;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .curved-box {
+    flex-direction: column;
+    height: auto;
+    border-radius: 20px;
+    width: 96%;
+  }
+
+  .left-section {
+    min-height: 280px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .right-section {
+    border-radius: 0 0 20px 20px;
+    padding: 28px 20px;
+  }
+
+  .logo-text {
+    top: 12px;
+    left: 16px;
+    font-size: 18px;
+  }
+}
